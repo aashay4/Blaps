@@ -13,7 +13,7 @@
             <label for="password">Password</label>
             <input type="password" class="form-control" placeholder="password" name="password" v-model="password" id="password">
             <label for="cpassword">Confirm Password</label>
-            <input type="cpassword" class="form-control" placeholder="confirm password" name="cpassword" v-model="confirm_password" id="cpassword">
+            <input type="password" class="form-control" placeholder="confirm password" name="cpassword" v-model="confirm_password" id="cpassword">
             <label for="email">Email ID</label>
             <input type="email" class="form-control" placeholder="email ID" name="email" v-model="email" id="email">
             <label for="name">Name</label>
