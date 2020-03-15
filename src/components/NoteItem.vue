@@ -7,7 +7,7 @@
       <button v-if="isLoggedIn" @click="deleteNote" class="delete" aria-label="delete">Delete</button>
     </div>
     <div>
-      <p><img :src="require('../assets/' + note.imgpath)" style="height: 200px; width: 200px;"></p>
+      <p><img :src="require('@/assets/' + note.imgpath)" style="height: 200px; width: 200px;"></p>
     </div>
 
     <div>
