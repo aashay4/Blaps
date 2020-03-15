@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'http://134.122.113.82:5000';
 export function getNotes() {
         return axios.get(`${BASE_URL}/api/notes/list`)
                 .then(response => response.data);
