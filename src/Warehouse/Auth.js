@@ -18,7 +18,7 @@ async login({
   commit
 }, user) {
   commit('auth_request');
-  let res = await axios.post('http://localhost:5000/api/users/login', user)
+  let res = await axios.post('http://134.122.113.82:5000/api/users/login', user)
   if(res.data.success){
     const token = res.data.token;
     const user = res.data.user;
@@ -33,7 +33,7 @@ async login({
     commit
   }, userData){
     commit('register_request');
-    let res = await axios.post('http://localhost:5000/api/users/register', userData);
+    let res = await axios.post('http://134.122.113.82:5000/api/users/register', userData);
     if(res.data.success !== undefined){
       commit('register_success');
     }
@@ -44,7 +44,7 @@ async login({
     commit
   }) {
     commit('profile_request');
-    let res =await axios.get('http://localhost:5000/api/users/profile')
+    let res =await axios.get('http://134.122.113.82:5000/api/users/profile')
     commit('user_profile', res.data.user)
     return res;
   },
